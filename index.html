@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b5fe5a02b7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>Ahmed Sabrah | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- HEADER NAV BAR -->
+    <header class="header">
+        <nav>
+            <span><i class="fa-solid fa-laptop-code"></i> <a class="my-name" href="#about">Ahmed Sabrah</a></span>
+            <ul class="nav">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+            </ul>      
+        </nav>
+    </header>
+        <!-- ABOUT SECTION -->
+    <div class="about">
+        <div class="about-me">
+            <div class="contact-buttons">
+                <a target="_blank" class="contact-btn" href="https://www.linkedin.com/in/ahmed-sabrah/">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" class="contact-btn" href="https://github.com/sabrahahmed">
+                    <i class="fa-brands fa-github"></i></a>
+                <a target="_blank" class="contact-btn" href="https://drive.google.com/file/d/1uUy1GT__WvjVH6l0r-JJ8PynDz24XGhJ/view?usp=sharing">
+                    <i class="fa-regular fa-file"></i></a>
+                <a target="_blank" class="contact-btn" href="mailto:sabraha@mcmaster.ca">
+                    <i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p>Software Engineer</p>
+            <h1>Hi, I'm Ahmed Sabrah!</h1>  
+        </div>
+        <img class="about-img" src="me.jpeg" alt="ME">
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+        <hr>
+        <h1 class="sub-title">Education</h1>
+        <div class="education-row">
+            <div class="education-col-1">
+                <img src="mac.jpg" alt="">
+                <h3>Computer Engineering Co-op<br>(2020 - Present)</h3>
+            </div>
+    
+            <div class="education-col-2">
+                <section>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('coursework')">Relevant Coursework</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('activities')">Activities</p>
+                    </div>
+    
+                    <div class="tab-contents active-tab" id="coursework">
+                        <ul>
+                            <li>Software Development (Python)</li>
+                            <li>Data Structures & Algorithms (C++)</li>
+                            <li>Principles of Programming (C, C++)</li>
+                            <li>Microprocessor Systems (C)</li>
+                            <li>Integrated Design Projects I (Python)</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li>McMaster Varsity Squash Team MVP Award (2021 - 2022)</li>
+                            <li>First Place - Experience Ventures National Hackathon 2022</li>
+                            <li>Dean's Honor List Recipient (May 2021) </li>
+                            <li>McMaster Honor Award ($750)</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li>McMaster Varsity Squash Team Starter (2021 - Present)</li>
+                            <li>Experience Ventures National Hackathon Particpant (March 2022)</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </div>
+    
+    <!-- Experience -->
+    <div id="experience">
+        <hr>
+        <h1 class="sub-title">Experience</h1>
+        <div class="wrapper">
+            <div class="center-line">
+              <a><i class="fas fa-caret-up"></i></a>
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fa-solid fa-money-check"></i>
+                <a target="_blank" href="https://www.finastra.com/"><img class="finastra" src="finastra.png" alt=""></a>
+                <div class="details">
+                    <div class="title">Software Engineer Co-op</div>
+                    <p class="time"><i>Jan 2023 - Present</i></p>
+                    <p>Developing and enhancing full-stack web applications for Finastra's Azure hosted marketplace</p>
+                    <p class="skills"><b>Skills:</b> JavaScript, TypeScript, Angular, C#, ASP.NET</p>
+                </div>
+              </section>
+            </div>
+
+            <div class="row row-2">
+                <section>
+                <i class="icon fa-sharp fa-solid fa-chalkboard-user"></i>
+                <a target="_blank" href="http://trispects.com/"><img class="trispects" src="trispects.png" alt=""></a>
+                  <div class="details">
+                      <div class="title">Software Engineer Co-op</div>
+                      <p class="time"><i>May 2022 - Aug 2022</i></p>
+                      <p>Developing and enhancing full-stack web applications for Finastra's Azure hosted marketplace</p>
+                      <p class="skills"><b>Skills:</b> Python, Flutter, MySQL, Selenium, Docker, Linux</p>
+                  </div>
+                </section>
+              </div>
+          </div>
+
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <hr>
+        <h1 class="sub-title">Projects</h1>
+
+        <div class="projects-grid">
+            <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Pacemaker DCM</h3>
+                    <p>A Device-Controller Monitor (DCM), built with <b>Python</b>, that provides 
+                        a means of remotely transmitting instructions and receiving information from a pacemaker.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>A user-friendly <b>Flutter</b> mobile application designed to display 
+                        live weather data in current device location as well as any city in the world.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Pacemaker DCM</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <!-- <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img class="img" src="DCM.jpeg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div id="technologies">
+        <hr>
+        <h1 class="sub-title">Technologies</h1>
+
+    </div>
+
+    <footer>
+        <h4>Connect with me!</h4>
+        <div class="footer contact-buttons">
+            <a target="_blank" class="contact-btn" href="https://www.linkedin.com/in/ahmed-sabrah/">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" class="contact-btn" href="https://github.com/sabrahahmed">
+                <i class="fa-brands fa-github"></i></a>
+            <a target="_blank" class="contact-btn" href="https://drive.google.com/file/d/1uUy1GT__WvjVH6l0r-JJ8PynDz24XGhJ/view?usp=sharing">
+                <i class="fa-regular fa-file"></i></a>
+            <a target="_blank" class="contact-btn" href="mailto:sabraha@mcmaster.ca">
+                <i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <p>&copy Made by Ahmed Sabrah</p>
+    </footer>
+    </div>
+<script src="index.js"></script>    
+</body>
+</html>
