@@ -13,19 +13,22 @@
 </head>
 <body>
     <div class="grid-container">
-        <!-- HEADER NAV BAR -->
+
+    <!-- HEADER NAV BAR -->
     <header class="header">
         <nav>
-            <span><i class="fa-solid fa-laptop-code"></i> <a class="my-name" href="#about">Ahmed Sabrah</a></span>
+            <span class="my-name"><i class="fa-solid fa-laptop-code"></i>Ahmed Sabrah</span>
             <ul class="nav">
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#technologies">Technologies</a></li>
-            </ul>      
+                <!-- <i id="light" class="fa-solid fa-sun"></i> -->
+            </ul>  
         </nav>
     </header>
-        <!-- ABOUT SECTION -->
+
+    <!-- ABOUT SECTION -->
     <div class="about">
         <div class="about-me">
             <div class="contact-buttons">
@@ -44,14 +47,14 @@
         <img class="about-img" src="me.jpeg" alt="ME">
     </div>
 
-    <!-- Education -->
+    <!-- EDUCATION -->
     <div id="education">
         <hr>
         <h1 class="sub-title">Education</h1>
         <div class="education-row">
             <div class="education-col-1">
                 <img src="mac.jpg" alt="">
-                <h3>Computer Engineering Co-op<br>(2020 - Present)</h3>
+                <h3>Bachelor of Computer Engineering ( <i>2020 - Present</i> )</h3>
             </div>
     
             <div class="education-col-2">
@@ -92,10 +95,11 @@
         </section>
     </div>
     
-    <!-- Experience -->
+    <!-- EXPERIENCE -->
     <div id="experience">
         <hr>
         <h1 class="sub-title">Experience</h1>
+        <!-- <p class="sub-title__desc">Currently seeking Fall 2023 Co-ops</p> -->
         <div class="wrapper">
             <div class="center-line">
               <a><i class="fas fa-caret-up"></i></a>
@@ -129,67 +133,91 @@
 
     </div>
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
     <div id="projects">
         <hr>
         <h1 class="sub-title">Projects</h1>
+        <!-- <p class="sub-title__desc">Some things I have built</p> -->
 
         <div class="projects-grid">
             <div class="project">
-                <img class="img" src="DCM.jpeg">
+                <img class="img" src="DCM_GIF.gif">
                 <div class="layer">
                     <h3>Pacemaker DCM</h3>
                     <p>A Device-Controller Monitor (DCM), built with <b>Python</b>, that provides 
-                        a means of remotely transmitting instructions and receiving information from a pacemaker.</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                        a means of remotely transmitting instructions and receiving information from a pacemaker
+                        (built with <b>MATLAB</b>).</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://github.com/sabrahahmed/Pacemaker_DCM"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="stack">
+                        <ul>
+                            <li>Python</li>
+                            <li>PySerial</li>
+                            <li>Matplotlib</li>
+                            <li>MATLAB</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="project">
-                <img class="img" src="DCM.jpeg">
+                <img class="img" src="flutter.JPG">
                 <div class="layer">
                     <h3>Weather Application</h3>
-                    <p>A user-friendly <b>Flutter</b> mobile application designed to display 
-                        live weather data in current device location as well as any city in the world.</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <p>A user-friendly <b>Flutter (Dart)</b> mobile application that displays live weather data in current device location as 
+                        well as over 200,000 cities worldwide searchable by the user.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://github.com/sabrahahmed/Flutter_Weather_Application"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://appetize.io/app/5vckaq6bn5jywh77vp5n3slmem?device=pixel4&osVersion=12.0&scale=100">
+                            <i class="fa-solid fa-mobile"></i></a>
+                    </div>
+                    <div class="stack">
+                        <ul>
+                            <li>Flutter</li>
+                            <li>OpenWeather API</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </div>    
             <div class="project">
-                <img class="img" src="DCM.jpeg">
+                <img class="img" src="hackathon.jpg">
                 <div class="layer">
-                    <h3>Pacemaker DCM</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from the play store.</p>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <h3>Nutritional Tracking Application</h3>
+                    <p>Proposed that universities across Canada adopt an integrated meal plan rewards and nutritional 
+                        tracking application to incentivize and help first-year university students develop healthy eating habits.
+                        Proposal won first place prize ($2500) in Experience Ventures National hackathon. 
+                    </p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=TGce0pma3_s"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://studentsuccess.mcmaster.ca/national-hackathon-promotes-student-wellness-and-innovative-thinking/">
+                            <i class="fa-solid fa-newspaper"></i></a>
+                    </div>
+                    <div class="stack">
+                        <ul>
+                            <li>Hackathon</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="project">
-                <img class="img" src="DCM.jpeg">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from the play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+            </div>      
             <div class="project">
-                <img class="img" src="DCM.jpeg">
+                <img class="img" src="recycling.jpeg">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from the play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Container Recyling & Sorting System</h3>
+                    <p>A python program for the Quanser-Labs environment by controlling the movement of the Q-arm and Q-bot 
+                        to load, transfer, and deposit containers into their designated station.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://sabraha0.wixsite.com/1p13portfolio/final-deliverable-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="stack">
+                        <ul>
+                            <li>Python</li>
+                            <li>Quanser-Labs</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <img class="img" src="DCM.jpeg">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from the play store.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div> -->
-            
+            </div>  
         </div>
     </div>
 
@@ -197,7 +225,28 @@
     <div id="technologies">
         <hr>
         <h1 class="sub-title">Technologies</h1>
-
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="tech-icon fa-sharp fa-solid fa-code"></i>
+                <h3>Languages</h3>
+                <p>Python, C/C++, Dart, C#, JavaScript/TypeScript, SQL</p>
+            </div>
+            <div class="tech-item">
+                <i class="tech-icon fa-solid fa-laptop"></i>
+                <h3>Web Development</h3>
+                <p>Angular, ASP.NET, Flask</p>
+            </div>
+            <div class="tech-item">
+                <i class="tech-icon fa-solid fa-database"></i>
+                <h3>Data Science</h3>
+                <p>MySQL, Matplotlib, Pandas, NumPy, MATLAB</p>
+            </div>
+            <div class="tech-item">
+                <i class="tech-icon fa-solid fa-wrench"></i>
+                <h3>Tools</h3>
+                <p>Git, Selenium, Azure DevOps, Docker, Linux Command Line</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -212,7 +261,7 @@
             <a target="_blank" class="contact-btn" href="mailto:sabraha@mcmaster.ca">
                 <i class="fa-regular fa-envelope"></i></a>
         </div>
-        <p>&copy Made by Ahmed Sabrah</p>
+        <p>&copy 2023 by Ahmed Sabrah</p>
     </footer>
     </div>
 <script src="index.js"></script>    
