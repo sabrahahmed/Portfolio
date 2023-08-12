@@ -165,6 +165,10 @@ h1{
 }
 
 /* EDUCATION SECTION */
+#education{
+    height: 500px;
+}
+
 hr{
     width: 60px;
     height: 5px;
