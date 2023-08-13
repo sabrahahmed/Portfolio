@@ -23,8 +23,9 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#technologies">Technologies</a></li>
-                <!-- <i id="light" class="fa-solid fa-sun"></i> -->
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>  
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     </header>
 
@@ -280,6 +281,16 @@
 
     <br>
     </div>
-<script src="index.js"></script>    
+<script src="index.js"></script> 
+<script>
+    // RESPONSIVE SIDE MENU
+    let nav = document.getElementsByClassName("nav");
+    function openmenu(){
+        nav.style.right = "0";
+    }
+    function closemenu(){
+        nav.style.right = "-100%";
+    }
+</script>   
 </body>
 </html>
