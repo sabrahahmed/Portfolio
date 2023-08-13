@@ -9,8 +9,8 @@ html{
     scroll-behavior: smooth;
     display: table;
     /* margin: auto; */
-    /* background-color: black; */
-    background: linear-gradient(to right, #434343 0%, black 100%);
+    background-color: black;
+    /* background: linear-gradient(to right, #434343 0%, black 100%); */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -166,7 +166,7 @@ h1{
 
 /* EDUCATION SECTION */
 #education{
-    /* height: 500px; */
+    height: 500px;
 }
 
 hr{
@@ -588,15 +588,17 @@ footer{
 }
 
 @media(max-width: 844px){
+    body{
+        overflow-x: hidden;
+    }
+
     #about{
         display: flex;
         flex-direction: column;
     }
-}
 
-@media(max-width: 844px){
-    body{
-        overflow-x: hidden;
+    #education{
+        height: 700px;
     }
 
     .tech-grid{
