@@ -19,10 +19,10 @@
         <nav>
             <span class="my-name"><i class="fa-solid fa-laptop-code"></i>Ahmed Sabrah</span>
             <ul class="nav">
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#technologies">Technologies</a></li>
+                <li onclick="closemenu()"><a href="#education">Education</a></li>
+                <li onclick="closemenu()"><a href="#experience">Experience</a></li>
+                <li onclick="closemenu()"><a href="#projects">Projects</a></li>
+                <li onclick="closemenu()"><a href="#technologies">Technologies</a></li>
                 <i class="fa-solid fa-x" onclick="closemenu()"></i>
             </ul>  
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -37,7 +37,7 @@
                     <i class="fa-brands fa-linkedin"></i></a>
                 <a target="_blank" class="contact-btn" href="https://github.com/sabrahahmed">
                     <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" class="contact-btn" href="https://drive.google.com/file/d/1uImFixLqNHeyx7S7maATX2_BzPcI6pPL/view?usp=sharing">
+                <a target="_blank" class="contact-btn" href="https://pdfhost.io/v/b7S4D7D73_Ahmed_Sabrah_Resume">
                     <i class="fa-regular fa-file"></i></a>
                 <a target="_blank" class="contact-btn" href="mailto:sabraha@mcmaster.ca">
                     <i class="fa-regular fa-envelope"></i></a>
@@ -103,15 +103,28 @@
         <h1 class="sub-title">Experience</h1>
         <!-- <p class="sub-title__desc">Currently seeking Fall 2023 Co-ops</p> -->
         <div class="wrapper">
+            <!-- <div class="row row-1">
+            <section>
+                <i class="icon fa-solid fa-money-check"></i>
+                <a target="_blank" href="https://www.finastra.com/"><img class="finastra" src="images/finastra.png" alt=""></a>
+                <div class="details">
+                    <div class="title">Software Engineer Intern</div>
+                    <p class="time"><i>January 2023 - August 2023</i></p>
+                    <p>Developing and enhancing full-stack web applications for Finastra's Azure hosted marketplace</p>
+                    <p class="skills"><b>Skills:</b> Angular, TypeScript, C#, ASP.NET, Azure Devops</p>
+                </div>
+            </section>
+            </div> -->
             <div class="row row-2">
                 <section>
                 <i class="icon fa-brands fa-hubspot"></i>
-                <a target="_blank" href="http://hubspot.com/"><img class="hubspot" src="images/hubspot.jpeg" alt=""></a>
+                <a target="_blank" href="https://www.hubspot.com/products/conversation-intelligence?hubs_content=www.hubspot.com%2Fproducts%2Fsales&hubs_content-cta=sales-feature14"><img class="hubspot" src="images/hubspot.jpeg" alt=""></a>
                   <div class="details">
                       <div class="title">Software Engineer Intern</div>
-                      <p class="time"><i>Starting September 2023</i></p>
-                      <p>Development of dynamic web applications written in JavaScript (React, ECMAScript 6, Sass) for HubSpot premium products.</p>
-                      <!-- <p class="skills"><b>Skills:</b> Python, Flutter, MySQL, Selenium, Docker, Linux</p> -->
+                      <p class="time"><i>September 2023 - Present</i></p>
+                      <!-- <p>Advancing Sales Hub's a Conversation Intelligence feature, 
+                        helping businesses analyze and improve their sales and customer service conversations</p> -->
+                      <p class="skills"><b>Skills:</b> React, TypeScript, Redux, Jasmine</p>
                   </div>
                 </section>
             </div>
@@ -125,12 +138,11 @@
                 <div class="details">
                     <div class="title">Software Engineer Intern</div>
                     <p class="time"><i>January 2023 - August 2023</i></p>
-                    <p>Developing and enhancing full-stack web applications for Finastra's Azure hosted marketplace</p>
-                    <p class="skills"><b>Skills:</b> JavaScript, TypeScript, Angular, C#, ASP.NET</p>
+                    <!-- <p>Developing and enhancing full-stack web applications for Finastra's Azure hosted marketplace</p> -->
+                    <p class="skills"><b>Skills:</b> Angular, TypeScript, C#, ASP.NET, Azure Devops</p>
                 </div>
               </section>
             </div>
-
             <div class="row row-2">
                 <section>
                 <i class="icon fa-sharp fa-solid fa-chalkboard-user"></i>
@@ -138,7 +150,7 @@
                   <div class="details">
                       <div class="title">Software Engineer Intern</div>
                       <p class="time"><i>May 2022 - August 2022</i></p>
-                      <p>Developed client-focused applications using a variety of technologies</p>
+                      <!-- <p>Developed client-focused applications using a variety of technologies</p> -->
                       <p class="skills"><b>Skills:</b> Python, Flutter, MySQL, Selenium, Docker, Linux</p>
                   </div>
                 </section>
@@ -239,27 +251,22 @@
     <!-- TECHNOLOGIES -->
     <div id="technologies">
         <hr>
-        <h1 class="sub-title">Technologies</h1>
+        <h1 class="sub-title">Skills</h1>
         <div class="tech-grid">
             <div class="tech-item">
                 <i class="tech-icon fa-sharp fa-solid fa-code"></i>
                 <h3>Languages</h3>
-                <p>TypeScript, JavaScript, Python, C, C++, C#, SQL, Dart</p>
+                <p>TypeScript, JavaScript, Python, C, C++, C#, HTML, CSS</p>
             </div>
             <div class="tech-item">
                 <i class="tech-icon fa-solid fa-laptop"></i>
-                <h3>Web Development</h3>
-                <p>Angular, React, ASP.NET, Node.js, Flask, jQuery, HTML5, CSS3, SCSS</p>
-            </div>
-            <div class="tech-item">
-                <i class="tech-icon fa-solid fa-database"></i>
-                <h3>Data Science</h3>
-                <p>MySQL, Oracle, MongoDB, Matplotlib, Pandas, NumPy, MATLAB</p>
+                <h3>Technologies</h3>
+                <p>Angular, React, Node.js, Express.js, Redux, ASP.NET, Flask</p>
             </div>
             <div class="tech-item">
                 <i class="tech-icon fa-solid fa-wrench"></i>
                 <h3>Tools</h3>
-                <p>Git, Azure DevOps, Selenium, Docker, Linux Command Line</p>
+                <p>MySQL, MongoDB, Git, Selenium, Docker, Azure DevOps</p>
             </div>
         </div>
     </div>
@@ -284,7 +291,7 @@
 <script src="index.js"></script> 
 <script>
     // RESPONSIVE SIDE MENU
-    let nav = document.getElementsByClassName("nav");
+    let nav = document.querySelector(".nav")
     function openmenu(){
         nav.style.right = "0";
     }
